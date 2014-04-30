@@ -11,15 +11,19 @@
         var $body = $('body');
         $body.html('');
 
-        var index = streams.home.length - 1;
-        while(index >= 0){
+        setInterval(function(){
+          var index = streams.home.length - 1;
           var tweet = streams.home[index];
           var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
+          $tweet.text('@' + tweet.user + ': ' + tweet.message + 'Tweeted at:' + tweet.created_at);
+          $tweet.prependTo($body);
+          index += 1;
+          if ($('div').length > 10){
+            $('body div:last').slideUp();
+            $('body div:last').remove();
+          }
 
+        }, 3000);
       });
 
     </script>
