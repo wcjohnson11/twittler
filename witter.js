@@ -29,8 +29,8 @@
           var index = users.length - 1;
           while (index >= 0){
             var user = users[index];
-            var $user = $("<li><a><span class='username' id= + tweet.user + '></span></a></li>").addClass("list-group-item");
-            $user.text("@" + user + ": ");
+            var $user = $("<li class='list-group-item'></li>");
+            $user.html("<a><span class='username' id=" + user + ">" + "@" + user + ": " + "</span></a>");
             $user.append("<span class='badge'>" + streams.users[user].length + "</span>");
             $user.appendTo($users);
             index -=1;
