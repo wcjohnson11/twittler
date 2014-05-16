@@ -1,38 +1,24 @@
-header, aside, nav, div article {
-	display: block;
-}
 
 body {
-	background-color: #797BFF;
-	font-family: Georgia, times, serif;
-	line-height: 1.4em;
-	margin-top: 0;
-	padding: 0;
+	background-color: #666;
 }
 
-
-article {
-	background-color: #E4E874;
-	clear: both;
-	overflow: auto;
-	width: 100%;
-	font-size: 1em;
-	border: #FFBC73 solid;
-	margin: 5px;
-}
-
-aside {
-	width: 230px;
+.col-md-4 {
+	background: #e3e3e3;
+	border: 1px solid #666;
 	float: left;
-	padding: 0px 0px 0px 20px;
+	width: 33%;
+	text-align: center;
+}
+.col-md-8 {
+	background: #e3e3e3;
+	border: 1px solid #666;
+	float: right;
+	width:66%;
+	text-align: center;
 }
 
-.navbar-wittier {
 
+.username {
+color: blue;
 }
-
-.container {
-	width: 100%;
-	height: 100%;
-}
-
